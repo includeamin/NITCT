@@ -1,0 +1,161 @@
+﻿<Window x:Class="NIT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NIT"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="420" Width="525">
+ <ScrollViewer>
+        <StackPanel Margin="0">
+
+            <materialDesign:Card Background="{DynamicResource MaterialDesignBackground}">
+
+                <StackPanel>
+
+                    <Expander HorizontalAlignment="Stretch"
+
+                         Header="Submit code" Margin="0">
+
+                        <StackPanel Orientation="Vertical"
+
+                               TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+
+                               Margin="24,8,24,16">
+
+                            <Grid>
+                                <TextBlock Text="Send Code" HorizontalAlignment="Left" />
+                                <Button x:Name="submitBtn" HorizontalAlignment="Right" Width="100" Content="Submit" IsEnabled="False" Click="submitBtn_Click"></Button>
+                            </Grid>
+
+                            <StackPanel>
+                                <TextBox x:Name="username" materialDesign:HintAssist.Hint="Username" Margin="10,5,10,0" ></TextBox>
+                                <TextBox x:Name="password" materialDesign:HintAssist.Hint="password" Margin="10,5,10,0" ></TextBox>
+                                <TextBox x:Name="cid" materialDesign:HintAssist.Hint="CTID " Margin="10,5,10,0" ></TextBox>
+                                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                                    <RadioButton x:Name="c" Content="c" Margin="5,0,0,0" IsEnabled="False" />
+                                    <RadioButton x:Name="sh" Content="sh" Margin="5,0,0,0" IsEnabled="False" ></RadioButton>
+                                    <RadioButton x:Name="py" Content="py" Margin="5,0,0,0" IsEnabled="False" ></RadioButton>
+                                    <RadioButton x:Name="java" Content="java" Margin="5,0,0,0" IsEnabled="False" ></RadioButton>
+                                    <RadioButton x:Name="py3" Content="py3" Margin="5,0,0,0" IsEnabled="False" ></RadioButton>
+
+                                    <RadioButton x:Name="cpp" Content="c++" Margin="5,0,0,0" IsEnabled="False" ></RadioButton>
+
+                                </StackPanel>
+
+                                <TextBlock x:Name="submitStatus"  Style="{DynamicResource MaterialDesignTitleTextBlock}" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.5" Margin="5,10,0,0"/>
+
+                            </StackPanel>
+
+
+                            <materialDesign:Card AllowDrop="True" Height="150" Margin="10" Drop="Card_Drop">
+                                <TextBlock x:Name="FileNametxt" Style="{DynamicResource MaterialDesignTitleTextBlock}" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.5" Text="Drag and Drop your code hear"/>
+
+                            </materialDesign:Card>
+                        </StackPanel>
+
+                    </Expander>
+                </StackPanel>
+            </materialDesign:Card>
+            <materialDesign:Card Background="{DynamicResource MaterialDesignBackground}" Margin="0,2,0,0">
+
+                <StackPanel>
+
+                    <Expander HorizontalAlignment="Stretch"
+
+                         Header="Report" Margin="0">
+
+                        <StackPanel Orientation="Vertical"
+
+                               TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+
+                               Margin="24,8,24,16">
+
+                            <TextBlock Text="Get report" />
+
+                            <StackPanel>
+                                <TextBox x:Name="reportTitle" materialDesign:HintAssist.Hint="Report title" Margin="10,5,10,0" ></TextBox>
+                                <Button x:Name="getreportBtn" Margin="5,5,5,0" Content="Get" Click="getreportBtn_Click"></Button>
+
+
+                            </StackPanel>
+
+
+                            <DataGrid Name="Grid" ></DataGrid>
+                        </StackPanel>
+
+                    </Expander>
+                </StackPanel>
+            </materialDesign:Card>
+            <materialDesign:Card Background="{DynamicResource MaterialDesignBackground}" Margin="0,2,0,0">
+
+                <StackPanel>
+
+                    <Expander HorizontalAlignment="Stretch"
+
+                         Header="Register" Margin="0">
+
+                        <StackPanel Orientation="Vertical"
+
+                               TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+
+                               Margin="24,8,24,16">
+
+
+
+                            <StackPanel>
+                                <TextBox x:Name="RegUserName" materialDesign:HintAssist.Hint="Username" Margin="10,5,10,0" ></TextBox>
+                                <TextBox x:Name="RegPassWord" materialDesign:HintAssist.Hint="password" Margin="10,5,10,0" ></TextBox>
+                                <Button Margin="5,5,5,0" Content="Register" Click="Button_Click"></Button>
+                                <TextBlock x:Name="LogTextBlock" MinHeight="50" Background="{StaticResource MaterialDesignDivider}" Margin="5,5,6,0"></TextBlock>
+
+
+
+                            </StackPanel>
+
+
+
+                        </StackPanel>
+
+                    </Expander>
+                </StackPanel>
+            </materialDesign:Card>
+
+            <materialDesign:Card Background="{DynamicResource MaterialDesignBackground}" Margin="0,2,0,0">
+
+                <StackPanel>
+
+                    <Expander HorizontalAlignment="Stretch"
+
+                         Header="Bug Report" Margin="0">
+                        <materialDesign:Card Margin="10">
+                            <StackPanel Margin="10">
+                                <TextBlock HorizontalAlignment="Center" Style="{DynamicResource MaterialDesignTitleTextBlock}"> Mail: aminjamal10@gmail.com</TextBlock>
+                                <Button x:Name="OpenSource" Margin="10" Click="OpenSource_Click"> Source Code</Button>
+
+                            </StackPanel>
+                        </materialDesign:Card>
+
+                      
+
+                    </Expander>
+                </StackPanel>
+            </materialDesign:Card>
+
+
+
+
+
+        </StackPanel>
+    </ScrollViewer>
+
+
+</Window>
