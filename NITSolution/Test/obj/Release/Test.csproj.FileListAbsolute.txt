@@ -1,0 +1,9 @@
+C:\Users\Jamal\Desktop\Files\Projects\NIT\NITCT\NITSolution\Test\bin\Release\Test.exe.config
+C:\Users\Jamal\Desktop\Files\Projects\NIT\NITCT\NITSolution\Test\bin\Release\Test.exe
+C:\Users\Jamal\Desktop\Files\Projects\NIT\NITCT\NITSolution\Test\bin\Release\Test.pdb
+C:\Users\Jamal\Desktop\Files\Projects\NIT\NITCT\NITSolution\Test\bin\Release\Renci.SshNet.dll
+C:\Users\Jamal\Desktop\Files\Projects\NIT\NITCT\NITSolution\Test\bin\Release\Renci.SshNet.xml
+C:\Users\Jamal\Desktop\Files\Projects\NIT\NITCT\NITSolution\Test\obj\Release\Test.csprojResolveAssemblyReference.cache
+C:\Users\Jamal\Desktop\Files\Projects\NIT\NITCT\NITSolution\Test\obj\Release\Test.csproj.CoreCompileInputs.cache
+C:\Users\Jamal\Desktop\Files\Projects\NIT\NITCT\NITSolution\Test\obj\Release\Test.exe
+C:\Users\Jamal\Desktop\Files\Projects\NIT\NITCT\NITSolution\Test\obj\Release\Test.pdb
