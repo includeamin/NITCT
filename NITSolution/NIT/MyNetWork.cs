@@ -55,7 +55,7 @@ namespace NIT
             dataTable.Columns.Add("param 3", typeof(string));
             dataTable.Columns.Add("param 4", typeof(string));
             dataTable.Columns.Add("param 5", typeof(string));
-            var result = Send($"report ct{ctId}");
+            var result = Send($"report {ctId}");
             var data = result.Split(null);
             for (int i = 0; i < data.Length -6; i += 6)
             {
